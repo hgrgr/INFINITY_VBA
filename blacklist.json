@@ -1,0 +1,6 @@
+{
+	"select": "Alert include select",
+	"Case": "Alert include Case",
+	"function": "Alert include function",
+	"shell": "Alert include shell"
+}
