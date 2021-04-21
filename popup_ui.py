@@ -12,22 +12,22 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 # import sys
 # import argparse
 
-# paser =argparse.ArgumentParser("VBA ë§¤í¬ë¡? PATH")
-# parser.add_argument('--explan', required=True, help="?•…?„±ë§¤í¬ë¡œë?? ?„¤ëª?")
+# paser =argparse.ArgumentParser("VBA ë§¤í¬ï¿½? PATH")
+# parser.add_argument('--explan', required=True, help="?ï¿½ï¿½?ï¿½ï¿½ë§¤í¬ë¡œï¿½?? ?ï¿½ï¿½ï¿½?")
 
 # args = paser.parse_args()
 # explain = args.explain.replace("_"," ")
 
 # print(explain)
 
-
+explain = 'abc'
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(609, 211)
         MainWindow.setMouseTracking(False)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("../infinity.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("./icon/infinity.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         MainWindow.setWindowIcon(icon)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -35,7 +35,7 @@ class Ui_MainWindow(object):
         self.label.setGeometry(QtCore.QRect(40, 40, 61, 61))
         self.label.setStyleSheet("background-image: url(:/inpinity/warning (1).png);")
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("../warning (1).png"))
+        self.label.setPixmap(QtGui.QPixmap("./icon/warning (1).png"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
@@ -55,8 +55,8 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "INPINITY program"))
-        self.label_2.setWhatsThis(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; font-weight:600;\">?•…?„± ë§¤í¬ë¡œê?? ê°ì???˜?—ˆ?Šµ?‹ˆ?‹¤.</span></p></body></html>"))
-        self.label_2.setText(_translate("MainWindow", "¾Ç¼º¸ÅÅ©·Î°¡ °¨ÁöµÇ¾ú½À´Ï´Ù."))
+        self.label_2.setWhatsThis(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; font-weight:600;\">?ï¿½ï¿½?ï¿½ï¿½ ë§¤í¬ë¡œï¿½?? ê°ï¿½???ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½.</span></p></body></html>"))
+        self.label_2.setText(_translate("MainWindow", "ê°ì§€"))
         self.textBrowser.setHtml(_translate("MainWindow", 
         "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
         "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
