@@ -9,18 +9,19 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-# import sys
-# import argparse
+import sys
+import argparse
 
-# paser =argparse.ArgumentParser("VBA 매크�? PATH")
-# parser.add_argument('--explan', required=True, help="?��?��매크로�?? ?���?")
+parser = argparse.ArgumentParser("VBA 매크로 PATH")
+parser.add_argument('--explan', required=True, help="악성매크로를 설명")
+args = parser.parse_args()
+explain = args.explan.replace("_"," ")
 
-# args = paser.parse_args()
-# explain = args.explain.replace("_"," ")
 
-# print(explain)
+print(explain)
 
-explain = 'abc'
+
+#explain = 'abc'
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")

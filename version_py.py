@@ -34,7 +34,7 @@ if vbaparser.detect_vba_macros():
                     #os.system('python C:\\Users\hsj80\Desktop\python\Guitest.py --expaln abc --test cba')
                     #os.system('python C:\\Users\hsj80\Desktop\python\Guitest.py --expaln {} --test {}'.format('abc','cba'))
                     #os.system('python C:\\Users\hsj80\Desktop\python\Guitest.py --explan {} --test cba'.format(expaln))
-                    os.system('python C:\\Users\hsj80\Desktop\python\Guitest.py --explan {}'.format(expaln))
+                    os.system('python C:\\Users\hsj80\Desktop\python\popup_ui.py --explan {}'.format(expaln))
                     #time.sleep(60)
                     break
 else:
